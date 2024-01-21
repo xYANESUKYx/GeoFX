@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.0" prefWidth="159.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="IP ADDRESS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="ipLabel" text="Label" GridPane.rowIndex="1" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/isp.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="-5.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Label text="REGISTERED ISP:" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="-2.0" />
+               </padding></Label>
+            <Label fx:id="ispLabel" text="Label" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="135.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="TYPE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="typeLabel" text="Label" GridPane.rowIndex="6" />
+            <Label text="HOSTNAME" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="hostnameLabel" text="Label" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+            <Label text="ANS" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="ansLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="25.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

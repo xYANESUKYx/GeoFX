@@ -1,5 +1,6 @@
 package dad.GeoFX;
 
+import dad.GeoFX.Controller.MainController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
